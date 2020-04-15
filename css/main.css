@@ -1,0 +1,460 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+.mainSlider{
+    margin: 0 50px;
+    height: 690px;
+    position: relative;
+    /*overflow: hidden;*/
+    background:url(../images/main_img.jpg) no-repeat center center;
+    background-size: cover;
+}
+/*.mainSlider img{
+    position: absolute;
+    left:50%;
+    margin-left: -910px;가로 1820
+}*/
+
+
+.sliderTxt{
+    position: absolute;
+    /*index.html에서 메인이미지보다 아래있어서 위에 올라옴*/
+    top:35%;/*50퍼주고 높이만큼빼도됨*/
+    width:100%;
+    text-align: center;/*인라인과 넓이100퍼줘야먹음*/
+    color:#fff;
+    font-size: 22px;
+}
+.sliderTxt h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.sliderTxt h2 span{
+    display: block;
+}
+.sliderTxt p{}
+
+.sBtn{
+    position: absolute;
+    width:26px;
+    height: 46px;
+    background: url(../images/sp_com.png) no-repeat;
+    background-position: -128px -61px;
+    text-indent: -9999px;
+    top:50%;
+    margin-top:-23px;
+}
+.sBtn a{
+    display: block;
+}
+.sLbtn{
+    left:30px;/*right0하고 마진?*/
+}
+.sRbtn{
+    background-position: -159px -61px;
+    right:30px;
+}
+
+/*mainCon01*/
+/*중앙정렬하는법
+가로값있으면 마진 0 오토로 중간정렬가능
+플루트레프트있을 경우 블록에서 텍스트어라인안먹으므로 디스플레이인라인블록주고 텍스트어라인센터*/
+
+.mainCon01{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.con01Icon{
+    display: inline-block;
+}
+.con01Icon li{
+    font-size: 14px;
+    float:left;
+    margin: 0 50px;
+}
+.con01Icon a{}
+.con01Icon span{
+    width:65px;
+    height: 55px;
+    display: block;
+    text-indent: -9999px;
+    background: url(../images/sp_com.png) no-repeat;
+    margin-bottom: 20px;
+}
+.con01Icon p{}
+
+.con01Icon li .icon01{
+    background-position:-3px -118px;
+}
+.con01Icon li .icon02{
+    background-position:-73px -118px;
+}
+.con01Icon li .icon03{
+    background-position:-150px -116px;
+}
+.con01Icon li .icon04{
+    background-position:-216px -118px;
+}
+.con01Icon li .icon05{
+    background-position:-295px -118px;
+}
+.con01Icon li .icon06{
+    background-position:-365px -118px;
+}
+
+.con01Icon li:hover span{
+    background-position-y:-184px;/*표준속성이아님*/
+}
+.con01Icon li:hover .icon03{
+    background-position: -150px -182px;
+}
+.con01Icon li:hover p{
+    color: #2d5b79;
+    font-weight: bold;
+}
+
+/*mainCon02*/
+.mainCon02{
+    background: #DFD9DE;
+    padding: 50px 0;
+}
+
+.con02Tit{
+    text-align: center;
+}
+.con02Tit h2{}
+.con02Tit p{
+    margin-bottom: 30px;
+}
+
+.con02Left{
+    position: relative;
+    float: left;
+}
+.con02Left img{
+    display: block;
+}
+.leftText{
+    position: absolute;
+    right: 0;
+    top:0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    width:240px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 15px;
+}
+.leftText h4{}
+.leftText p{
+    font-weight: 200px;
+    margin-top:20px;
+    font-size:20px;
+}
+.leftText p span{
+    font-weight: bold;
+}
+
+.leftText .lastTxt{
+    font-size: 13px;
+}
+
+.moreBtn{
+    font-size: 14px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    width:210px;
+    left:15px;
+    bottom: 30px;
+}
+.moreBtn a{
+    color: #fff;
+    display: block;
+    transition: all 1s;
+}
+.moreBtn:hover a{
+    background: #fff;
+    color: #333;
+}
+
+.con02Right{
+    float: left;
+    width:400px;
+    background: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 430px;
+}
+.con02Right li{
+    /*height:80px;*/
+    margin-top:22px;
+}
+.con02Right img{
+    width:80px;
+    vertical-align: middle;
+    /*position:absolute;*/
+}
+.con02Right a{}
+
+.listTxt{
+    display: inline-block;
+    vertical-align: middle;
+    /*padding-left:100px;*/
+    margin-left:10px;
+}
+.listTxt h4{}
+.listTxt p{}
+
+/*con02 button*/
+.mainCon02 .inner{
+    position: relative;
+}
+.mainCon02 .sBtn{
+    z-index: 2;
+}
+.mainCon02 .sLbtn{
+    left:-50px;
+}
+.mainCon02 .sRbtn{
+    right:-50px;
+}
+
+
+/*mainCon03*/
+
+.mainCOn03{
+    margin-top:50px;
+}
+
+.con03{
+    width:285px;
+    height:285px; 
+    float:left;
+    margin-right: 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.con03 h3{
+    padding-top:100px;
+    transition: color 1s;
+}
+.con03 a{
+    display: block;
+    height: 100%;
+    background: rgba(45,91,121,0);
+    transition: background 1s;
+}
+.con03 p{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0;/*트랜지션은 디스플레이 논,블록값 안먹음*/
+    transition: opacity 1s;
+    /*displya:none; */
+}
+.con03:hover a{
+    background: rgba(45,91,121,0.8);
+}
+.con03:hover p{
+    opacity: 1;
+}
+.con03Menu02:hover a{
+    color: #fff;
+    /*display block;*/ 
+}
+
+.con03Menu01{
+    background-image: url(../images/mainrow3_img1.jpg);
+}
+
+.con03Menu01 h3,.con03Menu03 h3{
+    color: #fff;
+}
+.con03Menu02{
+    background-image: url(../images/mainrow3_img2.jpg);
+}
+.con03Menu03{
+    background-image: url(../images/mainrow3_img3.jpg);
+}
+.con03Menu04{
+    margin-right: 0;
+    background: #F2F0EE;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.con03Menu04 h3{
+    padding-top: 10px;
+    margin-bottom:20px;
+}
+/*.con03Menu04 select{
+    appearance:none;
+    -webkit-appearance:none;
+    background: url(../images/arrow.PNG) no-repeat 95% center;
+}
+
+.con03Menu04 select::-ms-expand{
+    display: none;
+}*/
+
+.con03Menu04 select, .con03Menu04 input, .searchBtn{
+    width:100%;
+    height: 45px;
+    line-height: 45px;
+    background:#fff;
+    border:none;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.con03Menu04 select{
+    -webkit-appearance:none;
+    background: url(../images/arrow.PNG) no-repeat #fff 95% center;
+    margin-bottom: 15px;
+}
+
+.searchBtn{
+    background: #2b5b79;
+    position: absolute;
+    width:245px;
+    bottom: 20px;
+}
+.searchBtn a{
+    color: #fff;
+    display: inline;
+}
+
+
+/*mainCon04*/
+
+.mainCon04{}
+
+.con04{
+    background: #f2f0ED;
+    width:590px;
+    height: 183px;
+    float:left;
+    margin-right: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+.con04 h2{
+    text-align: center;
+    color: #2d5b79;
+    font-size:20px;
+    border-bottom: 1px solid #fff;
+    line-height: 60px;
+}
+
+.plusBtn{
+    background: url(../images/sp_com.png) no-repeat -196px -61px #fff;
+    border-radius: 50%;
+    text-indent: -9999px;
+    width:30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top:15px;
+}
+
+.notice{
+    width:295px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.notice:last-child{
+    border-left: 1px solid #fff;
+}
+.notice a{}
+.notice p{
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notice span{
+    color: #999;
+    font-size: 12px;
+    margin: 10px 0;
+    display: block;
+}
+
+.news{
+    margin-right: 0;
+}
+.news ul{}
+.news li{
+    font-size: 14px;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+}
+.news li a{
+    position: relative;
+    margin: 0 15px;
+    display: block;
+}
+.news p{
+    width:70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news span{
+    font-size: 12px;
+    color:#999;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+
+.mainCon05{
+    background: url(../images/mainrow4_bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.con05{
+    width:285px;
+    height:387px;
+    margin-right: 20px;
+    float:left;
+    text-align: center;
+    background-repeat: no-repeat;/*con4*/
+    background-size: cover/*con4*/;
+}
+.con05 a{
+    display: block;
+    height: 100%;
+}
+.con05 h3{
+    padding-top:300px;
+    font-size: 22px;
+}
+.con05 p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.con05Menu01{
+    background-image: url(../images/mainrow5_img1.jpg);/*con04도 이렇게 바꿔줘야함*/
+}
+.con05Menu02{
+    background-image: url(../images/mainrow5_img2.jpg);
+}
+.con05Menu03{
+    background-image: url(../images/mainrow5_img3.jpg);
+}
+.con05Menu04{
+    margin-right: 0;
+    background-image: url(../images/mainrow5_img4.jpg);
+}
